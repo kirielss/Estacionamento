@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace Estacionamento
 {
@@ -23,7 +24,7 @@ namespace Estacionamento
 
         public override string ToString()
         {
-            return "Dono: " + Owner + " / Marca: " + Brand + " / Cor: " + Color + " / Placa: " + License;
+            return "Placa: " + License + " / Marca: " + Brand + " / Cor: " + Color + " / Dono: " + Owner;
         }
 
     }
