@@ -22,12 +22,33 @@ namespace Estacionamento
                 garagem.AddCar(car);
             }
 
+            char resp;
+            do
+            {
+                Console.WriteLine("Deseja adicionar um carro? s/n");
+                resp = char.Parse(Console.ReadLine());
+
+                if (resp == 's')
+                {
+                    Console.Write("Seu nome: ");
+                    string nome = Console.ReadLine();
+                    Console.Write("Modelo do carro: ");
+                    string modelo = Console.ReadLine();
+                    Console.Write("Cor do carro: ");
+                    string cor = Console.ReadLine();
+                    Console.Write("Placa do carro: ");
+                    string placa = Console.ReadLine();
+
+                    Car carro = new Car(nome, modelo, cor, placa);
+                    garagem.AddCar(carro);
+                }
+
+            } while (resp == 's');
+
             foreach (Car car in garagem.Veiculos)
             {
                 Console.WriteLine(car);
             }
-
-            // now the fun begins
 
         }
     }
