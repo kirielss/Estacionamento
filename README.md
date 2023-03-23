@@ -16,3 +16,5 @@
 
 - Pedir um imput de int do usuário para estipular uma taxa pelo estacionamento.
 - Pedir um tempo de duração estacionado para calcular a tarifa do estacionamento.
+
+![prompt](readme.png)

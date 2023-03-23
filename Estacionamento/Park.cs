@@ -5,8 +5,6 @@ namespace Estacionamento
 {
     internal class Park
     {
-        public double Taxa { get; private set; }
-
         public List<Car> Veiculos { get; private set; }
 
         public Park()
